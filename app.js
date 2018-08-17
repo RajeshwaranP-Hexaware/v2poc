@@ -13,7 +13,7 @@ const server = app.listen(port, function () {
 });
 
 app.post("/test", function (req, res) {
-    console.log("inside test", req.body);
+    console.log("inside test", JSON.stringify(req.body));
     res.json({
         "fulfillmentText": "This is a text response",
         "fulfillmentMessages": [
